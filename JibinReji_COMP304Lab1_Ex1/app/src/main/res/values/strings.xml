@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JibinReji_COMP304Lab1_Ex1</string>
+    <string name="button_send">Send</string>
+    <string name="editTextBox_Input">Enter a message</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imgViewContact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:visibility="visible"
+    tools:context="com.example.jibin.jibin_reji_comp304_001_hands_on_test_1.selected_contact_activity">
+
+    <TextView
+        android:id="@+id/textViewQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/textViewQuest" />
+
+    <ImageView
+        android:id="@+id/imageViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewQuest"
+        android:layout_below="@+id/textViewQuest"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/contacts" />
+
+    <ImageView
+        android:id="@+id/imageViewDiagonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewContact"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/textViewQuest"
+        app:srcCompat="@drawable/diag" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageViewContact"
+        android:layout_below="@+id/imageViewContact"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextMessage"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/editTextMessage"
+        android:onClick="onSendBtnClick"
+        android:text="SEND" />
+
+
+</RelativeLayout>

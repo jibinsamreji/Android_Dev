@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Jibin_Reji_COMP304_001_Hands_On_Test-1</string>
+    <string name="radioButtonJame">Jame Doe</string>
+    <string name="radioButtonJames">James Smith</string>
+    <string name="radioButtonJibin">Jibin Reji</string>
+    <string name="radioButtonJohn">John Turner</string>
+    <string name="textViewHeading">Contacts</string>
+    <string name="textViewQuest">How are you?</string>
+</resources>

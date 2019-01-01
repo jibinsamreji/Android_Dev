@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jibin2.jibin_reji_comp304lab02.RestaurantSelectionActivity"
+    android:background="@drawable/bgstr"
+    >
+
+    <TextView
+        android:id="@+id/textViewFoodSelectio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/editTextFoodSelecetion"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup">
+
+        <CheckBox
+            android:id="@+id/checkBxThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBxTwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp" />
+
+        <CheckBox
+            android:id="@+id/checkBxOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFoodSelectio"
+            android:layout_marginTop="46dp"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/checkBxTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBxOne"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFoodSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:layout_weight="1"
+        android:onClick="onSelectFoodButtonClick"
+        android:text="@string/btnFoodSelection" />
+
+</RelativeLayout>

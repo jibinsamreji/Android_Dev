@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jibin2.jibin_reji_comp304lab02.LauncherActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/launcherImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/imageView"
+        android:fadingEdge="none"
+        android:padding="45dp"
+        app:srcCompat="@drawable/cafe_agape_logo"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <Button
+        android:id="@+id/launcherButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launcherImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="0dp"
+        android:onClick="goToCuisineType"
+        android:text="@string/Enter"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="425dp" />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jibin2.jibin_reji_comp304lab02.CuisineTypeActivity"
+    android:background="@drawable/bgimg">
+
+    <RadioGroup
+        android:id="@+id/cuisineTypeRadioGroup"
+        android:layout_width="304dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/textViewAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="69dp">
+
+        <RadioButton
+            android:id="@+id/radioBtnAmerican"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="onCuisineBtnClick"
+            android:text="@string/radioBtnAmerican" />
+
+        <RadioButton
+            android:id="@+id/radioBtnIndian"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="onCuisineBtnClick"
+            android:text="@string/radioBtnIndian" />
+
+        <RadioButton
+            android:id="@+id/radioBtnChinese"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="onCuisineBtnClick"
+            android:text="@string/radioBtnChinese" />
+
+        <RadioButton
+            android:id="@+id/radioBtnItalian"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="onCuisineBtnClick"
+            android:text="@string/radioBtnItalian" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRestaurant"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onFoodBtnSelcClick"
+        android:text="@string/btnRestaurant"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="383dp"
+        android:layout_below="@+id/spinnerMenu"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/editTextHeading"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/textViewSelRest"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewSelRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnRestaurant"
+        android:layout_below="@+id/cuisineTypeRadioGroup"
+        android:layout_marginTop="23dp"
+        android:text="@string/textViewSelRest"
+        android:textColor="?android:attr/colorPressedHighlight" />
+
+</RelativeLayout>

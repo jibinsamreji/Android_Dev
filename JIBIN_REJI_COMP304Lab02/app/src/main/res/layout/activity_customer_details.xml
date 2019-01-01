@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jibin2.jibin_reji_comp304lab02.CustomerDetails"
+    android:background="@drawable/qaa"
+    >
+
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/textViewUser"
+        android:layout_below="@+id/textViewCusHead"
+        android:layout_alignStart="@+id/textViewAddress" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textViewUser"
+        android:layout_alignBottom="@+id/textViewUser"
+        android:layout_alignStart="@+id/textViewCusHead" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewAddress"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_toStartOf="@+id/editTextAddress"
+        android:layout_marginEnd="33dp" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|textPostalAddress"
+        android:layout_alignBaseline="@+id/textViewAddress"
+        android:layout_alignBottom="@+id/textViewAddress"
+        android:layout_alignStart="@+id/editTextUserName" />
+
+    <TextView
+        android:id="@+id/textViewCeditCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/textViewCeditCardNumber"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/editTextAddress"
+        android:layout_toStartOf="@+id/editTextCreditCard" />
+
+    <EditText
+        android:id="@+id/editTextCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/textViewCeditCardNumber"
+        android:layout_alignBottom="@+id/textViewCeditCardNumber"
+        android:layout_alignStart="@+id/editTextAddress" />
+
+    <TextView
+        android:id="@+id/textViewFavFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewFavFood"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editTextCreditCard"
+        android:layout_alignStart="@+id/textViewCeditCardNumber" />
+
+    <EditText
+        android:id="@+id/editTextFavFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/textViewFavFood"
+        android:layout_alignStart="@+id/btnOrder" />
+
+    <TextView
+        android:id="@+id/textViewCusHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewCusHead"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFavFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:onClick="onOrderButtonClick"
+        android:text="@string/btnOrder" />
+</RelativeLayout>

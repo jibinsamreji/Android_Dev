@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">"JIBIN_REJI_COMP304Lab02 "</string>
+    <string name="Enter">ENTER</string>
+    <string name="imageView">Company Logo</string>
+    <string name="radioBtnAmerican">American</string>
+    <string name="radioBtnIndian">Indian</string>
+    <string name="radioBtnChinese">Chinese</string>
+    <string name="radioBtnItalian">Italian</string>
+    <string name="btnRestaurant">Continue To Select Food Items</string>
+    <string name="editTextHeading">Select Cuisine Type</string>
+    <string name="editTextFoodSelecetion">Select The Food You Would Like To Have</string>
+    <string name="foodTypeList">food_type_list</string>
+    <string name="textViewSelRest">Select one of the following Restaurant</string>
+
+
+    <string-array name="AmericanRestaurants">
+        <item>DQ Grills</item>
+        <item>Mc Donalds</item>
+        <item>Johns Hotel</item>
+    </string-array>
+    <string-array name="IndianRestaurants">
+        <item>ITC Hotel</item>
+        <item>The Indian Cuisine</item>
+        <item>J and E Food Chain</item>
+    </string-array>
+    <string-array name="ChineseRestaurants">
+        <item>Lee Hotels</item>
+        <item>The Chinese Cuisine</item>
+        <item>Hong-Lee Cuisine</item>
+    </string-array>
+    <string-array name="ItalianRestaurants">
+        <item>La-Fete Cuisine</item>
+        <item>Italianao Hotel</item>
+        <item>Tasty Buds Hotel</item>
+    </string-array>
+    <string-array name="DQ_Food_Menu">
+        <item>Chicken Sandwich Grilled</item>
+        <item>DQ Special Steak Sandwich</item>
+        <item>Potato Wedges</item>
+    </string-array>
+    <string-array name="McD_Food_Menu">
+        <item>Junior Chicken</item>
+        <item>Big Mac Sandwich</item>
+        <item>Potatoe Wedges</item>
+    </string-array>
+    <string-array name="John_Food_Menu">
+        <item>Reuben Sandwich</item>
+        <item>Rabbit Pie</item>
+        <item>Corn  Dog</item>
+    </string-array>
+    <string name="btnFoodSelection">Proceed</string>
+    <string name="textViewUser">Name</string>
+    <string name="textViewAddress">"Address  "</string>
+    <string name="textViewCeditCardNumber">Credit Card No</string>
+    <string name="textViewFavFood">Favourite Food</string>
+    <string name="textViewCusHead">Customer Details:</string>
+    <string name="btnOrder">Order</string>
+    <string name="textViewOrderSummary">Order Summary :</string>
+</resources>
